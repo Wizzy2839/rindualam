@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR STORY - Rindu Alam Coffee</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ra-black': '#111111', 
+                        'ra-white': '#ffffff',
+                        'ra-gray': '#f8f8f8',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],    
+                        serif: ['Bodoni Moda', 'serif'], 
+                    },
+                    letterSpacing: {
+                        tight: '-0.02em',
+                        widest: '0.15em',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-ra-black font-sans antialiased selection:bg-ra-black selection:text-white">
+
+    <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="index.html" class="group">
+                <h1 class="font-serif text-2xl font-medium tracking-tight">Rindu Alam<sup class="text-[10px] font-sans opacity-50">®</sup></h1>
+                <p class="text-[9px] tracking-widest uppercase text-gray-400 mt-0.5 group-hover:text-black transition-colors">Farm to Cup</p>
+            </a>
+
+            <div class="hidden md:flex items-center gap-12 text-[11px] font-medium tracking-widest uppercase text-gray-500">
+                <a href="index.html" class="nav-item hover:text-black transition-colors">Home</a>
+                <a href="about.html" class="nav-item active text-black">Our Story</a>
+                <a href="menu.html" class="nav-item hover:text-black transition-colors">Menu</a>
+                <a href="visit.html" class="nav-item hover:text-black transition-colors">Visit</a>
+            </div>
+
+            <div class="hidden md:block">
+                <a href="visit.html" class="bg-black text-white px-6 py-2.5 text-[10px] font-semibold tracking-widest uppercase hover:bg-gray-800 transition-all duration-300">
+                    Contact Us
+                </a>
+            </div>
+
+            <button class="md:hidden text-2xl" id="mobile-menu-btn"><i class="ph ph-list"></i></button>
+        </div>
+        
+        <div class="hidden bg-white border-t border-gray-100 absolute w-full h-screen" id="mobile-menu">
+            <div class="flex flex-col p-10 gap-8 text-center text-2xl font-serif text-black">
+                <a href="index.html">Home</a>
+                <a href="about.html">Our Story</a>
+                <a href="menu.html">Menu</a>
+                <a href="visit.html">Visit</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-[60vh] min-h-[400px] bg-black overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 w-full h-full opacity-70">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover grayscale brightness-75" alt="Coffee Farm">
+        </div>
+        <div class="relative z-10 text-center text-white reveal-up">
+            <p class="text-[10px] font-bold tracking-widest uppercase mb-4">Since 2021</p>
+            <h1 class="font-serif text-5xl md:text-7xl font-normal tracking-tight">The Origin</h1>
+        </div>
+    </header>
+
+    <section class="py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-20 items-center">
+                <div class="w-full md:w-1/2 reveal-up">
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 mb-6 block uppercase border-b border-gray-200 pb-4">The Beginning</span>
+                    <h2 class="font-serif text-4xl md:text-5xl mb-8 leading-tight font-medium">
+                        Sebuah <span class="italic text-gray-500">Inisiasi.</span>
+                    </h2>
+                    <div class="space-y-6 text-gray-700 font-light text-[15px] leading-7 text-justify">
+                        <p>
+                            Cerita ini bermula di tepian Telaga Ngebel. Sebuah destinasi indah yang sayangnya, bagi penikmat kopi sejati, terasa ada yang kurang. Sejauh mata memandang, hanya ada deretan warkop tradisional dengan kopi <em>sachet</em> atau tubruk sederhana.
+                        </p>
+                        <p>
+                            Kami bertanya: <em>"Kenapa tidak ada kopi yang layak di tempat seindah ini?"</em>
+                        </p>
+                        <p>
+                            Itulah titik awal Rindu Alam. Kami tidak ingin sekadar membuka kedai. Kami ingin membawa kultur. Membawa standar rasa baru. Menjadi <strong>Coffeeshop Modern Pertama</strong> yang berdiri di tanah ini, menantang status quo demi secangkir kopi yang pantas Anda nikmati.
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 relative reveal-up delay-100">
+                    <div class="aspect-[4/5] overflow-hidden bg-gray-50">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000" alt="Ngebel Lake Atmosphere">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-28 bg-black text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20 max-w-3xl mx-auto reveal-up">
+                <h2 class="font-serif text-4xl md:text-5xl mb-6 font-normal">Total Dedication</h2>
+                <p class="text-gray-400 font-light leading-relaxed">
+                    Kami percaya bahwa rasa terbaik tidak bisa dibeli dari pihak ketiga. Rasa terbaik harus diciptakan, dirawat, dan dijaga sendiri. Inilah arti sesungguhnya dari <em>Farm to Cup</em>.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="group reveal-up delay-100">
+                    <div class="w-20 h-20 mx-auto border border-white/20 rounded-full flex items-center justify-center mb-8 group-hover:border-white group-hover:bg-white group-hover:text-black transition-all duration-500">
+                        <i class="ph ph-potted-plant text-3xl font-light"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 italic">01. Planting</h3>
+                    <p class="text-sm text-gray-400 font-light leading-7 px-4">
+                        Di dataran tinggi Ponorogo, kami menanam sendiri bibit kopi pilihan. Merawatnya dengan iklim mikro yang sempurna.
+                    </p>
+                </div>
+
+                <div class="group reveal-up delay-200">
+                    <div class="w-20 h-20 mx-auto border border-white/20 rounded-full flex items-center justify-center mb-8 group-hover:border-white group-hover:bg-white group-hover:text-black transition-all duration-500">
+                        <i class="ph ph-thermometer text-3xl font-light"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 italic">02. Roasting</h3>
+                    <p class="text-sm text-gray-400 font-light leading-7 px-4">
+                        Tidak ada pihak ketiga. Mesin <em>roasting</em> kami bekerja setiap hari untuk mengeluarkan karakter terbaik dari setiap biji hijau.
+                    </p>
+                </div>
+
+                <div class="group reveal-up delay-300">
+                    <div class="w-20 h-20 mx-auto border border-white/20 rounded-full flex items-center justify-center mb-8 group-hover:border-white group-hover:bg-white group-hover:text-black transition-all duration-500">
+                        <i class="ph ph-coffee-bean text-3xl font-light"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4 italic">03. Serving</h3>
+                    <p class="text-sm text-gray-400 font-light leading-7 px-4">
+                        Barista kami menyeduh dengan presisi. Hasil akhirnya adalah cangkir yang jujur, bersih, dan penuh cerita.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-28 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-16 reveal-up">
+                <div>
+                    <span class="text-[10px] font-bold tracking-widest text-gray-400 mb-2 block uppercase">The Space</span>
+                    <h2 class="font-serif text-4xl font-normal">Our Sanctuary</h2>
+                </div>
+                <a href="#" class="text-[10px] font-bold tracking-widest uppercase text-black border-b border-black pb-1 hover:text-gray-500 transition">View Gallery</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="aspect-[3/4] overflow-hidden bg-gray-200 reveal-up">
+                    <img src="https://images.unsplash.com/photo-1442512595367-4273253fb507?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Interior">
+                </div>
+                <div class="aspect-[3/4] overflow-hidden bg-gray-200 reveal-up delay-100 md:mt-12">
+                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Coffee Bean">
+                </div>
+                <div class="aspect-[3/4] overflow-hidden bg-gray-200 reveal-up delay-200">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1000&auto=format&fit=crop" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-700" alt="Barista">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-black border-t border-gray-200">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid md:grid-cols-3 gap-12 text-center md:text-left">
+                <div>
+                    <h4 class="font-serif text-xl font-medium mb-4">Working Hours</h4>
+                    <p class="text-xs text-gray-500 uppercase tracking-widest mb-1">Everyday</p>
+                    <p class="text-lg font-bold">08:00 AM — 11:00 PM</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-serif text-xl font-medium mb-4">Our Locations</h4>
+                    <div class="space-y-4 text-sm text-gray-600 font-light">
+                        <div>
+                            <p class="font-bold uppercase tracking-widest text-[10px] text-black mb-1">Central</p>
+                            <p>Jl. Telaga, Briket, Gondowido, Kec. Ngebel, Kabupaten Ponorogo, Jawa Timur 63493</p>
+                        </div>
+                        <div>
+                            <p class="font-bold uppercase tracking-widest text-[10px] text-black mb-1">Branch</p>
+                            <p>Jl Batoro Katong, No 214, Ronowijayan, Kec Siman, Kec. Ponorogo, Kabupaten Ponorogo, Jawa Timur 63471</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-serif text-xl font-medium mb-4">Connect</h4>
+                    <div class="flex justify-center md:justify-start gap-4">
+                        <a href="https://www.instagram.com/rindualamcoffee/" class="w-10 h-10 border border-black rounded-full flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
+                            <i class="ph ph-instagram-logo text-lg"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@rindualamcoffee" class="w-10 h-10 border border-black rounded-full flex items-center justify-center hover:bg-black hover:text-white transition-all duration-300">
+                            <i class="ph ph-tiktok-logo text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-black text-white text-center py-6 text-[10px] uppercase tracking-widest font-bold">
+            <p>© 2026 Rindu Alam Coffee. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
